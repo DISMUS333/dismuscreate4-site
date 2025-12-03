@@ -25,6 +25,21 @@ Unity エディタのエラー管理を劇的に改善する高機能パネル
 - 複数形式のエクスポート（TXT/CSV/Markdown）
 - カスタマイズ可能なUI
 
+**システム要件:**
+- Unity 2021.3 以降（推奨）
+- Unity Asset Store 提出基準に準拠
+
+> [!WARNING]
+> Unity 2019.x / 2020.x での動作は保証されていません。Unity 2021.3 LTS 以降のご利用を強く推奨します。
+
+**購入方法:**
+
+本ツールは以下のプラットフォームで販売中・販売予定です：
+- **[BOOTH](https://dismuscreate4.booth.pm/)** - 販売中 🛒
+- **Unity Asset Store** - 準備中 🏪
+- **itch.io** - 準備中 🎮
+
+
 ## 📁 ディレクトリ構成
 
 ```
