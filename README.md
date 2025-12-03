@@ -17,8 +17,8 @@
 
 ## 🛠️ 掲載ツール
 
-### Error Clipboard Panel
-Unity エディタのエラー管理を劇的に改善する高機能パネル
+### Monitora
+Error Management Tool - Unity エディタのエラー管理を劇的に改善する高機能パネル
 
 - 時刻別ログのグループ化
 - 強力な検索機能（正規表現対応）
@@ -48,7 +48,7 @@ Unity エディタのエラー管理を劇的に改善する高機能パネル
 ├── style.css               # グローバルスタイル
 ├── LICENSE                 # プロプライエタリライセンス
 ├── tools/                  # 各ツールの詳細ページ
-│   └── error-clipboard-panel.html
+│   └── monitora.html
 └── assets/                 # 画像・アセット
     └── images/
 ```
