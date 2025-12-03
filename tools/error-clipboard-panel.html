@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Clipboard Panel - DISMUSCREATE4</title>
+    <meta name="description" content="Unity エディタでのエラー管理を劇的に改善する高機能なエラーログ収集・管理パネル">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar pixel-border">
+        <div class="container">
+            <div class="nav-brand glitch-text">
+                <img src="../assets/images/logo.png" alt="Logo" class="logo-img" style="width: 32px; height: 32px; image-rendering: pixelated;">
+                <span class="brand-name">DISMUSCREATE4</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">← Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Install</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tool Header -->
+    <section class="dark-hero" style="padding: 4rem 0;">
+        <div class="scanlines"></div>
+        <div class="container">
+            <div class="hero-content">
+                <img src="../assets/images/machine.png" alt="Error Clipboard Panel" style="width: 150px; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.8)); margin-bottom: 1rem;">
+                <h1 class="hero-title pixel-text">Error Clipboard Panel</h1>
+                <p class="hero-subtitle">Unity エディタのエラー管理を劇的に改善</p>
+                <div class="hero-badges" style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <img src="https://img.shields.io/badge/Unity-2019.4%2B-black?logo=unity" alt="Unity 2019.4+">
+                    <img src="https://img.shields.io/badge/License-Proprietary-red.svg" alt="Proprietary License">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="dark-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">
+                <span class="title-decoration">▼</span> Overview <span class="title-decoration">▼</span>
+            </h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                    通常のUnity Consoleでは実現できない、ログの時刻別グループ化、強力な検索機能、
+                    柔軟なエクスポート機能を提供し、大量のログを整理された状態で確認・分析できます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="dark-section-alt">
+        <div class="container">
+            <h2 class="section-title pixel-text">
+                <span class="title-decoration">►</span> Features <span class="title-decoration">◄</span>
+            </h2>
+
+            <div class="tools-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">🗂️</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">ログ管理</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ 自動収集・保存</li>
+                            <li>✓ 時刻別グループ化</li>
+                            <li>✓ 自動折りたたみ</li>
+                            <li>✓ 最大500件保管</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">🔍</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">検索・フィルタ</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ テキスト検索</li>
+                            <li>✓ 正規表現対応</li>
+                            <li>✓ 警告フィルター</li>
+                            <li>✓ ページネーション</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">📤</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">エクスポート</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ TXT形式</li>
+                            <li>✓ CSV形式</li>
+                            <li>✓ Markdown形式</li>
+                            <li>✓ クリップボード</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">🔗</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">リンク機能</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ 自動リンク化</li>
+                            <li>✓ ワンクリックジャンプ</li>
+                            <li>✓ ハイライト表示</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">🔔</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">通知システム</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ カスタム通知</li>
+                            <li>✓ 通知対象選択</li>
+                            <li>✓ カスタムサウンド</li>
+                            <li>✓ バッチング</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card pixel-border">
+                    <div class="tool-info">
+                        <div class="pixel-emoji large" style="margin-bottom: 1rem;">🎨</div>
+                        <h3 class="pixel-text" style="margin-bottom: 1rem;">カスタマイズ</h3>
+                        <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                            <li>✓ フォントサイズ調整</li>
+                            <li>✓ カラー変更</li>
+                            <li>✓ 背景色プリセット</li>
+                            <li>✓ 設定永続化</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="dark-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">
+                <span class="title-decoration">◆</span> Installation <span class="title-decoration">◆</span>
+            </h2>
+
+            <div class="contact-info pixel-border" style="max-width: 800px; margin: 0 auto;">
+                <h3 class="pixel-text" style="font-size: 1.5rem; margin-bottom: 1.5rem;">手動インストール</h3>
+
+                <div style="margin-bottom: 2rem;">
+                    <div
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); margin-bottom: 1rem;">
+                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 1: リポジトリをクローン</div>
+                        <pre
+                            style="background: var(--bg-dark); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>git clone https://github.com/DISMUS333/dismuscreate4-site.git</code></pre>
+                    </div>
+
+                    <div
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); margin-bottom: 1rem;">
+                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 2: ファイルをコピー</div>
+                        <p style="color: var(--text-secondary);"><code
+                                style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">ErrorClipboardPanel.cs</code>
+                            を Unity プロジェクトの <code
+                                style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">Assets/Editor</code>
+                            フォルダにコピー</p>
+                        <p style="color: var(--accent-warning); font-size: 0.875rem; margin-top: 0.5rem;">※
+                            Editorフォルダが存在しない場合は作成してください</p>
+                    </div>
+
+                    <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color);">
+                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 3: 自動コンパイル</div>
+                        <p style="color: var(--text-secondary);">Unity エディタを開くと自動的にスクリプトがコンパイルされます</p>
+                    </div>
+                </div>
+
+                <h3 class="pixel-text" style="font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 3rem;">使用方法</h3>
+                <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                    <li>Unity エディタのメニューから <code
+                            style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">Window</code>
+                        → <code
+                            style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">Error Clipboard Panel</code>
+                        を選択</li>
+                    <li>チェックボックスでログを選択、検索バーでフィルタリング</li>
+                    <li>ツールバーの「時刻でグループ化」ボタンをクリック</li>
+                    <li><code
+                            style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">Export TXT</code>
+                        ボタンから形式を選択してエクスポート</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="dark-section-alt">
+        <div class="container">
+            <h2 class="section-title pixel-text">
+                <span class="title-decoration">◈</span> Screenshots <span class="title-decoration">◈</span>
+            </h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">※ スクリーンショットは後日追加予定</p>
+
+            <div class="tools-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="tool-card pixel-border" style="aspect-ratio: 16/10;">
+                    <div class="thumbnail-placeholder pixel-pattern" style="height: 100%;">
+                        <div>
+                            <div class="pixel-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">🖼️</div>
+                            <p style="color: var(--text-secondary);">メインパネル</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card pixel-border" style="aspect-ratio: 16/10;">
+                    <div class="thumbnail-placeholder pixel-pattern" style="height: 100%;">
+                        <div>
+                            <div class="pixel-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">📁</div>
+                            <p style="color: var(--text-secondary);">グループ化表示</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card pixel-border" style="aspect-ratio: 16/10;">
+                    <div class="thumbnail-placeholder pixel-pattern" style="height: 100%;">
+                        <div>
+                            <div class="pixel-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">⚙️</div>
+                            <p style="color: var(--text-secondary);">設定画面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-card pixel-border" style="aspect-ratio: 16/10;">
+                    <div class="thumbnail-placeholder pixel-pattern" style="height: 100%;">
+                        <div>
+                            <div class="pixel-emoji" style="font-size: 3rem; margin-bottom: 0.5rem;">📤</div>
+                            <p style="color: var(--text-secondary);">エクスポート</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- License -->
+    <section id="license" class="dark-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">
+                <span class="title-decoration">⚠</span> License <span class="title-decoration">⚠</span>
+            </h2>
+
+            <div class="contact-info pixel-border" style="max-width: 900px; margin: 0 auto;">
+                <p style="text-align: center; font-size: 1.2rem; color: var(--text-glow); margin-bottom: 2rem;">
+                    このソフトウェアは<strong>有料の商用ツール</strong>です。すべての権利は著作権者が保有しています。
+                </p>
+
+                <div
+                    style="background: var(--bg-darker); padding: 2rem; border: 2px solid var(--border-color); border-radius: 4px; margin-bottom: 2rem;">
+                    <pre
+Proprietary License - All Rights Reserved
+
+Copyright (c) 2025 DISMUSCREATE4
+
+【使用許諾】
+本ソフトウェアは、正規に購入したユーザーのみが使用できます。
+ゲームやアプリなどの制作物に使用することは許可されています。
+
+【禁止事項】
+以下の行為を明示的に禁止します：
+- 本ソフトウェアのコピー、複製、再配布
+- ソースコードの改変、逆コンパイル、リバースエンジニアリング
+- 本ソフトウェアの転売、再販売、サブライセンスの付与
+- 本ソフトウェアを使用した派生製品の作成・販売
+
+【サポート】
+不具合修正やアップデートは可能な範囲で対応しますが、
+その実施を保証するものではありません。
+
+【無保証】
+本ソフトウェアは「現状のまま」提供され、明示的または
+黙示的な保証は一切ありません。
+
+【Unity Asset Store との互換性】
+本ライセンスは、Unity Asset Store の利用規約に従うものとします。
+                </div>
+
+                <div style="text-align: center;">
+                    <h3 class="pixel-text"
+                        style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent-warning);">💰 購入方法</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">本ツールの購入については、以下までお問い合わせください：</p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
+                        <a href="mailto:dismuscreate4@gmail.com" class="pixel-btn btn-primary">
+                            <span class="pixel-emoji">📧</span> dismuscreate4@gmail.com
+                        </a>
+                        <a href="https://github.com/DISMUS333/dismuscreate4-site" target="_blank"
+                            class="pixel-btn btn-secondary">
+                            <span class="pixel-emoji">💻</span> GitHub Repository
+                        </a>
+                        <div class="pixel-btn btn-disabled" style="opacity: 0.5;">
+                            <span class="pixel-emoji">🛒</span> Unity Asset Store (準備中)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer dark-footer">
+        <div class="scanlines"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo.png" alt="Logo" class="logo-img" style="width: 32px; height: 32px; image-rendering: pixelated;">
+                    <span class="brand-name pixel-text">DISMUSCREATE4</span>
+                </div>
+
+                <div class="footer-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#tools">Tools</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="pixel-text">© 2025 DISMUSCREATE4 - All Rights Reserved</p>
+                <p class="footer-tagline">不気味でおかしな世界の創造者</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
