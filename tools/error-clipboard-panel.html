@@ -18,7 +18,8 @@
     <nav class="navbar pixel-border">
         <div class="container">
             <div class="nav-brand glitch-text">
-                <img src="../assets/images/logo.png" alt="Logo" class="logo-img" style="width: 32px; height: 32px; image-rendering: pixelated;">
+                <img src="../assets/images/logo.png" alt="Logo" class="logo-img"
+                    style="width: 32px; height: 32px; image-rendering: pixelated;">
                 <span class="brand-name">DISMUSCREATE4</span>
             </div>
             <ul class="nav-menu">
@@ -35,11 +36,12 @@
         <div class="scanlines"></div>
         <div class="container">
             <div class="hero-content">
-                <img src="../assets/images/machine.png" alt="Error Clipboard Panel" style="width: 150px; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.8)); margin-bottom: 1rem;">
+                <img src="../assets/images/machine.png" alt="Error Clipboard Panel"
+                    style="width: 150px; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.8)); margin-bottom: 1rem;">
                 <h1 class="hero-title pixel-text">Error Clipboard Panel</h1>
                 <p class="hero-subtitle">Unity エディタのエラー管理を劇的に改善</p>
                 <div class="hero-badges" style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
-                    <img src="https://img.shields.io/badge/Unity-2019.4%2B-black?logo=unity" alt="Unity 2019.4+">
+                    <img src="https://img.shields.io/badge/Unity-2021.3%2B-black?logo=unity" alt="Unity 2021.3+">
                     <img src="https://img.shields.io/badge/License-Proprietary-red.svg" alt="Proprietary License">
                 </div>
             </div>
@@ -157,31 +159,77 @@
             </h2>
 
             <div class="contact-info pixel-border" style="max-width: 800px; margin: 0 auto;">
-                <h3 class="pixel-text" style="font-size: 1.5rem; margin-bottom: 1.5rem;">手動インストール</h3>
+                <!-- System Requirements Warning -->
+                <div
+                    style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--accent-warning); border-radius: 4px; margin-bottom: 2rem;">
+                    <h3 class="pixel-text"
+                        style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent-warning);">⚠️ システム要件</h3>
+                    <ul style="color: var(--text-secondary); line-height: 1.8;">
+                        <li><strong>Unity 2021.3 LTS 以降</strong> （推奨）</li>
+                        <li>Unity Asset Store 提出基準に準拠</li>
+                    </ul>
+                    <p style="color: var(--accent-warning); margin-top: 1rem; font-size: 0.875rem;">
+                        ⚠ Unity 2019.x / 2020.x での動作は保証されていません。
+                    </p>
+                </div>
 
-                <div style="margin-bottom: 2rem;">
+                <h3 class="pixel-text" style="font-size: 1.5rem; margin-bottom: 1.5rem;">インストール方法</h3>
+
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; text-align: center;">
+                    本ツールは<strong>有料商品</strong>です。以下のストアで購入後、各プラットフォームの手順に従ってインストールしてください。
+                </p>
+
+                <!-- Store Installation Methods -->
+                <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- BOOTH -->
                     <div
-                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); margin-bottom: 1rem;">
-                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 1: リポジトリをクローン</div>
-                        <pre
-                            style="background: var(--bg-dark); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>git clone https://github.com/DISMUS333/dismuscreate4-site.git</code></pre>
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--accent-primary); border-radius: 4px;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pixel-emoji" style="font-size: 2rem;">🛒</div>
+                            <h4 class="pixel-text" style="font-size: 1.3rem; color: var(--accent-primary);">BOOTH での購入
+                            </h4>
+                        </div>
+                        <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                            <li><a href="https://dismuscreate4.booth.pm/" target="_blank"
+                                    style="color: var(--accent-primary); text-decoration: underline;">BOOTH販売ページ</a>から購入
+                            </li>
+                            <li>ダウンロードした <code
+                                    style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">.unitypackage</code>
+                                ファイルを Unity プロジェクトにインポート</li>
+                            <li>Unity エディタが自動的にスクリプトをコンパイル</li>
+                        </ol>
                     </div>
 
+                    <!-- Unity Asset Store -->
                     <div
-                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); margin-bottom: 1rem;">
-                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 2: ファイルをコピー</div>
-                        <p style="color: var(--text-secondary);"><code
-                                style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">ErrorClipboardPanel.cs</code>
-                            を Unity プロジェクトの <code
-                                style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">Assets/Editor</code>
-                            フォルダにコピー</p>
-                        <p style="color: var(--accent-warning); font-size: 0.875rem; margin-top: 0.5rem;">※
-                            Editorフォルダが存在しない場合は作成してください</p>
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pixel-emoji" style="font-size: 2rem;">🏪</div>
+                            <h4 class="pixel-text" style="font-size: 1.3rem;">Unity Asset Store での購入</h4>
+                        </div>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">準備中 - 近日公開予定</p>
+                        <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem; opacity: 0.7;">
+                            <li>Unity Asset Store で購入</li>
+                            <li>Package Manager からインポート</li>
+                            <li>自動的にプロジェクトに追加</li>
+                        </ol>
                     </div>
 
-                    <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color);">
-                        <div style="color: var(--accent-primary); margin-bottom: 0.5rem;">STEP 3: 自動コンパイル</div>
-                        <p style="color: var(--text-secondary);">Unity エディタを開くと自動的にスクリプトがコンパイルされます</p>
+                    <!-- itch.io -->
+                    <div
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div class="pixel-emoji" style="font-size: 2rem;">🎮</div>
+                            <h4 class="pixel-text" style="font-size: 1.3rem;">itch.io での購入</h4>
+                        </div>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">準備中 - 近日公開予定</p>
+                        <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem; opacity: 0.7;">
+                            <li>itch.io で購入</li>
+                            <li>ダウンロードした <code
+                                    style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">.unitypackage</code>
+                                ファイルを Unity プロジェクトにインポート</li>
+                            <li>Unity エディタが自動的にスクリプトをコンパイル</li>
+                        </ol>
                     </div>
                 </div>
 
@@ -261,48 +309,65 @@
 
                 <div
                     style="background: var(--bg-darker); padding: 2rem; border: 2px solid var(--border-color); border-radius: 4px; margin-bottom: 2rem;">
-                    <pre
-Proprietary License - All Rights Reserved
-
-Copyright (c) 2025 DISMUSCREATE4
-
-【使用許諾】
-本ソフトウェアは、正規に購入したユーザーのみが使用できます。
-ゲームやアプリなどの制作物に使用することは許可されています。
-
-【禁止事項】
-以下の行為を明示的に禁止します：
-- 本ソフトウェアのコピー、複製、再配布
-- ソースコードの改変、逆コンパイル、リバースエンジニアリング
-- 本ソフトウェアの転売、再販売、サブライセンスの付与
-- 本ソフトウェアを使用した派生製品の作成・販売
-
-【サポート】
-不具合修正やアップデートは可能な範囲で対応しますが、
-その実施を保証するものではありません。
-
-【無保証】
-本ソフトウェアは「現状のまま」提供され、明示的または
-黙示的な保証は一切ありません。
-
-【Unity Asset Store との互換性】
-本ライセンスは、Unity Asset Store の利用規約に従うものとします。
-                </div>
+                    <pre Proprietary License - All Rights Reserved Copyright (c) 2025 DISMUSCREATE4 【使用許諾】
+                        本ソフトウェアは、正規に購入したユーザーのみが使用できます。 ゲームやアプリなどの制作物に使用することは許可されています。 【禁止事項】 以下の行為を明示的に禁止します： -
+                        本ソフトウェアのコピー、複製、再配布 - ソースコードの改変、逆コンパイル、リバースエンジニアリング - 本ソフトウェアの転売、再販売、サブライセンスの付与 -
+                        本ソフトウェアを使用した派生製品の作成・販売 【サポート】 不具合修正やアップデートは可能な範囲で対応しますが、 その実施を保証するものではありません。 【無保証】
+                        本ソフトウェアは「現状のまま」提供され、明示的または 黙示的な保証は一切ありません。 【Unity Asset Store との互換性】 本ライセンスは、Unity Asset Store
+                        の利用規約に従うものとします。 </div>
 
                 <div style="text-align: center;">
                     <h3 class="pixel-text"
                         style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent-warning);">💰 購入方法</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">本ツールの購入については、以下までお問い合わせください：</p>
-                    <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-                        <a href="mailto:dismuscreate4@gmail.com" class="pixel-btn btn-primary">
-                            <span class="pixel-emoji">📧</span> dismuscreate4@gmail.com
-                        </a>
-                        <a href="https://github.com/DISMUS333/dismuscreate4-site" target="_blank"
-                            class="pixel-btn btn-secondary">
-                            <span class="pixel-emoji">💻</span> GitHub Repository
-                        </a>
-                        <div class="pixel-btn btn-disabled" style="opacity: 0.5;">
-                            <span class="pixel-emoji">🛒</span> Unity Asset Store (準備中)
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">本ツールは以下のプラットフォームで販売予定です：</p>
+                    
+                    <!-- Platform Cards -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <!-- BOOTH -->
+                        <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px;">
+                            <div class="pixel-emoji" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🛒</div>
+                            <h4 class="pixel-text" style="margin-bottom: 0.5rem; color: var(--accent-primary);">BOOTH</h4>
+                            <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">クリエイター向けマーケット</p>
+                            <a href="https://dismuscreate4.booth.pm/" target="_blank" class="pixel-btn btn-primary" style="width: 100%;">
+                                販売ページへ
+                            </a>
+                        </div>
+                        
+                        <!-- Unity Asset Store -->
+                        <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
+                            <div class="pixel-emoji" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🏪</div>
+                            <h4 class="pixel-text" style="margin-bottom: 0.5rem;">Unity Asset Store</h4>
+                            <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Unity公式マーケット</p>
+                            <button class="pixel-btn btn-disabled" disabled style="width: 100%;">
+                                準備中
+                            </button>
+                        </div>
+                        
+                        <!-- itch.io -->
+                        <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
+                            <div class="pixel-emoji" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎮</div>
+                            <h4 class="pixel-text" style="margin-bottom: 0.5rem;">itch.io</h4>
+                            <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">インディークリエイター支援</p>
+                            <button class="pixel-btn btn-disabled" disabled style="width: 100%;">
+                                準備中
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--accent-primary); border-radius: 4px;">
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                            <strong>お問い合わせ</strong><br>
+                            ご購入前の質問や技術サポートについては、以下までご連絡ください：
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                            <a href="mailto:dismuscreate4@gmail.com" class="pixel-btn btn-secondary">
+                                <span class="pixel-emoji">📧</span> dismuscreate4@gmail.com
+                            </a>
+                            <a href="https://github.com/DISMUS333/dismuscreate4-site" target="_blank"
+                                class="pixel-btn btn-secondary">
+                                <span class="pixel-emoji">💻</span> GitHub Repository
+                            </a>
                         </div>
                     </div>
                 </div>
