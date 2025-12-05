@@ -260,44 +260,63 @@
                 <span class="title-decoration">◈</span> Screenshots <span class="title-decoration">◈</span>
             </h2>
 
-            <div class="tools-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- 2列レイアウト：大きく見やすく -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 3rem; max-width: 1400px; margin: 0 auto;">
+
                 <!-- Collapse Chaos Screenshot -->
-                <div class="tool-card pixel-border" style="overflow: hidden;">
+                <div
+                    style="background: var(--bg-darker); border: 2px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <img src="../assets/images/monitora-collapse.png" alt="Collapse Chaos - Organize Instantly"
-                        style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);">
-                    <div class="tool-info" style="padding: 1rem;">
-                        <h4 class="pixel-text" style="font-size: 1.1rem; margin-bottom: 0.5rem;">グループ化で整理</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem;">時刻別に自動グループ化し、99+のログもワンクリックで管理</p>
+                        style="width: 100%; height: auto; display: block;">
+                    <div style="padding: 1.5rem;">
+                        <h3 class="pixel-text"
+                            style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--accent-primary);">グループ化で整理
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            時刻別に自動グループ化することで、99+のログもワンクリックで折りたたみ・展開できます。カオスを瞬時に整理。</p>
                     </div>
                 </div>
 
                 <!-- Main Window Screenshot -->
-                <div class="tool-card pixel-border" style="overflow: hidden;">
+                <div
+                    style="background: var(--bg-darker); border: 2px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <img src="../assets/images/monitora-window.png" alt="Monitora Main Window"
-                        style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);">
-                    <div class="tool-info" style="padding: 1rem;">
-                        <h4 class="pixel-text" style="font-size: 1.1rem; margin-bottom: 0.5rem;">高度なフィルタリング</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem;">エラー、警告の絞り込み、検索、ページネーション機能</p>
+                        style="width: 100%; height: auto; display: block;">
+                    <div style="padding: 1.5rem;">
+                        <h3 class="pixel-text"
+                            style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--accent-primary);">高度なフィルタリング
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            エラー、警告の個別絞り込み、正規表現対応の検索機能、ページネーション機能で大量のログを効率的に管理できます。</p>
                     </div>
                 </div>
 
                 <!-- Export Dialog Screenshot -->
-                <div class="tool-card pixel-border" style="overflow: hidden;">
+                <div
+                    style="background: var(--bg-darker); border: 2px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <img src="../assets/images/monitora-export.png" alt="Export Formats"
-                        style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);">
-                    <div class="tool-info" style="padding: 1rem;">
-                        <h4 class="pixel-text" style="font-size: 1.1rem; margin-bottom: 0.5rem;">柔軟なエクスポート</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem;">TXT、CSV、Markdown形式でログをエクスポート</p>
+                        style="width: 100%; height: auto; display: block;">
+                    <div style="padding: 1.5rem;">
+                        <h3 class="pixel-text"
+                            style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--accent-primary);">柔軟なエクスポート
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            TXT、CSV、Markdown形式でログをエクスポート可能。AIアシスタントへの共有にも最適化されています。</p>
                     </div>
                 </div>
 
                 <!-- Settings Window Screenshot -->
-                <div class="tool-card pixel-border" style="overflow: hidden;">
+                <div
+                    style="background: var(--bg-darker); border: 2px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <img src="../assets/images/monitora-settings-cool.png" alt="Customizable Settings"
-                        style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);">
-                    <div class="tool-info" style="padding: 1rem;">
-                        <h4 class="pixel-text" style="font-size: 1.1rem; margin-bottom: 0.5rem;">高度なカスタマイズ</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem;">通知、自動オープン、配色など、好みに合わせて細かく設定可能</p>
+                        style="width: 100%; height: auto; display: block;">
+                    <div style="padding: 1.5rem;">
+                        <h3 class="pixel-text"
+                            style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--accent-primary);">高度なカスタマイズ
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            通知設定、自動オープン、UIカラー、フォントサイズなど、ワークフローに合わせて細かく設定できます。</p>
                     </div>
                 </div>
             </div>
