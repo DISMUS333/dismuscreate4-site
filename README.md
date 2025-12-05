@@ -34,10 +34,10 @@ Error Management Tool - Unity エディタのエラー管理を劇的に改善�
 
 **購入方法:**
 
-本ツールは以下のプラットフォームで販売中・販売予定です：
-- **[BOOTH](https://dismuscreate4.booth.pm/)** - 販売中 🛒
+本ツールは以下のプラットフォームで販売予定です：
+- **[BOOTH](https://dismuscreate4.booth.pm/)** - 準備中 🛒
 - **Unity Asset Store** - 準備中 🏪
-- **itch.io** - 準備中 🎮
+- **[itch.io](https://dismuscreate4.itch.io)** - 準備中 🎮
 
 
 ## 📁 ディレクトリ構成
@@ -70,7 +70,7 @@ git push origin main
 
 ## 📧 お問い合わせ
 
-- **Email**: dismuscreate4@gmail.com
+- **Email**: dismuscreate4.help@gmail.com
 - **GitHub**: [@DISMUS333](https://github.com/DISMUS333)
 
 ## 📝 ライセンス

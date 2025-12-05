@@ -183,15 +183,15 @@
                 <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
                     <!-- BOOTH -->
                     <div
-                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--accent-primary); border-radius: 4px;">
+                        style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div class="pixel-emoji" style="font-size: 2rem;">🛒</div>
-                            <h4 class="pixel-text" style="font-size: 1.3rem; color: var(--accent-primary);">BOOTH での購入
-                            </h4>
+                            <h4 class="pixel-text" style="font-size: 1.3rem;">BOOTH での購入</h4>
                         </div>
-                        <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">準備中 - 近日公開予定</p>
+                        <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem; opacity: 0.7;">
                             <li><a href="https://dismuscreate4.booth.pm/" target="_blank"
-                                    style="color: var(--accent-primary); text-decoration: underline;">BOOTH販売ページ</a>から購入
+                                    style="color: var(--text-secondary); text-decoration: underline;">BOOTH販売ページ</a>から購入
                             </li>
                             <li>ダウンロードした <code
                                     style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">.unitypackage</code>
@@ -224,7 +224,9 @@
                         </div>
                         <p style="color: var(--text-muted); margin-bottom: 1rem;">準備中 - 近日公開予定</p>
                         <ol style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem; opacity: 0.7;">
-                            <li>itch.io で購入</li>
+                            <li><a href="https://dismuscreate4.itch.io" target="_blank"
+                                    style="color: var(--text-secondary); text-decoration: underline;">itch.io</a>で購入
+                            </li>
                             <li>ダウンロードした <code
                                     style="background: rgba(124, 58, 237, 0.2); padding: 0.25rem 0.5rem; border-radius: 3px;">.unitypackage</code>
                                 ファイルを Unity プロジェクトにインポート</li>
@@ -324,13 +326,13 @@
                     <!-- Platform Cards -->
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
                         <!-- BOOTH -->
-                        <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px;">
+                        <div style="background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; opacity: 0.6;">
                             <div class="pixel-emoji" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🛒</div>
-                            <h4 class="pixel-text" style="margin-bottom: 0.5rem; color: var(--accent-primary);">BOOTH</h4>
+                            <h4 class="pixel-text" style="margin-bottom: 0.5rem;">BOOTH</h4>
                             <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">クリエイター向けマーケット</p>
-                            <a href="https://dismuscreate4.booth.pm/" target="_blank" class="pixel-btn btn-primary" style="width: 100%;">
-                                販売ページへ
-                            </a>
+                            <button class="pixel-btn btn-disabled" disabled style="width: 100%;">
+                                準備中
+                            </button>
                         </div>
                         
                         <!-- Unity Asset Store -->
@@ -361,8 +363,8 @@
                             ご購入前の質問や技術サポートについては、以下までご連絡ください：
                         </p>
                         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-                            <a href="mailto:dismuscreate4@gmail.com" class="pixel-btn btn-secondary">
-                                <span class="pixel-emoji">📧</span> dismuscreate4@gmail.com
+                            <a href="mailto:dismuscreate4.help@gmail.com" class="pixel-btn btn-secondary">
+                                <span class="pixel-emoji">📧</span> dismuscreate4.help@gmail.com
                             </a>
                             <a href="https://github.com/DISMUS333/dismuscreate4-site" target="_blank"
                                 class="pixel-btn btn-secondary">
